@@ -1,0 +1,20 @@
+div.thumb {
+margin: 3px;
+border: 1px solid #A0ACC0;
+height: auto;
+float: left;
+text-align: center;
+}
+.thumb img{
+display: inline;
+margin: 5px;
+border: 1px solid #A0ACC0;
+}
+.thumb a:hover img {border: 1px solid black;}
+.photocattitle {text-align: center; font-weight: bold;}
+.phototitle {
+text-align: center;
+font-weight: normal;
+width: 400px;
+margin: 0 3px 3px 3px;
+} 

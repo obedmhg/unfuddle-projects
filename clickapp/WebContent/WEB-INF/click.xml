@@ -1,0 +1,7 @@
+<click-app>
+
+  <!-- Specify the Java package where Page classes can be found -->
+  <pages package="com.ocorp"/>
+  <page path="click-page.htm" classname="com.ocorp.ClickPage"/>
+
+</click-app>

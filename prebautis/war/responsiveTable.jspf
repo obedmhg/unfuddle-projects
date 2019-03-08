@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<!-- Included CSS Files -->
+<!-- Combine and Compress These CSS Files -->
+<!-- End Combine and Compress These CSS Files -->
+<link rel="stylesheet" href="responsive-tables.css">
+<script src="javascripts/jquery.min.js"></script>
+<script src="responsive-tables.js"></script>
+
+<!--[if lt IE 9]>
+  <link rel="stylesheet" href="stylesheets/ie.css">
+  <![endif]-->
+
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+<div class="twelve columns">
+	<table class="responsive">
+		<tbody>
+			<tr>
+				<th>Fecha</th>
+				<th>Folio</th>
+				<th>Nombre</th>
+				<th>Parentesco</th>
+				<th>Estado Civil</th>
+				<th>Tipo de Comprobante</th>
+			</tr>
+			<c:forEach items='${sessionScope["results"]}' var="reg">
+				<tr>
+					<td>${reg.fecha}</td>
+					<td>${reg.folio}</td>
+					<td>${reg.nombre}</td>
+					<td>${reg.parentesco}</td>
+					<td>${reg.estadoCivil}</td>
+					<td>${reg.tipo}</td>
+				</tr>
+			</c:forEach>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Post oneReason4</title>
+<link rel="stylesheet" type="text/css" media="screen, projection"
+	href="../css/common.css" />
+</head>
+<body>
+#include("/common/header.htm")
+<div class="navigation"></div>
+<div class="content">
+
+<a href="/onereasonfor/create-one-reason-for.htm"><img src="../images/add.png" width="25" height="25"/></a> 
+
+#foreach( $reason in $reasons )
+
+<div class="testimonials"><img class="left-quotes"
+	alt="Comment quotes" src="../images/left-quotes.png"> 
+	<span class="onreson-name"><b>$reason.tittle</b></span>
+<p><br>
+$reason.description <br>
+</p>
+Posted by $reason.user <img class="right-quotes" alt="Comment quotes"
+	src="../images/right-quotes.png"></div>
+
+#end</div>
+</body>
+</html>

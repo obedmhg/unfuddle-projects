@@ -1,0 +1,120 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.2/angular.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="elisa.js"></script>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    	<title>Elisa</title>
+  </head>
+  <body background="bg.png">
+  
+  <a href="https://github.com/elisa"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+  
+<!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5297fb7d36849701"></script>
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left',
+      'numPreferredServices' : 2
+    }   
+  });
+</script>
+<!-- AddThis Smart Layers END -->
+
+  
+  	  <div align="center">
+  	  <img id="mainImage" /><br>
+      <textarea rows="1" cols="100" placeholder="Que quieres Saber?" id="q"></textarea><br>
+      <input id="responde" type="submit" value="Responde Elisa" class="button black"></input>
+      <div id="r" style="display: none;"></div>
+      
+      </div>
+      <script>
+      var isAsking = false;
+      var response = "";
+      var counter = 1;
+		var masterQuestion = "Elisa, estas ahi?, responde por favor, estamos esperandote";
+	    var partOfMQ = "Elisa, estas ahi?";
+	    var elisaAns = new Array ("Aqui estoy...\n", "Buu...\n",
+	            "Que quieres!?\n", "No Estoy de humor!!\n" );
+	    var elisaNonAns = new Array  ("No quiero jugar contigo!!!\n",
+	            "Muerete!!\n", "Dejame en paz!\n", "No te entiendo..\n");
+	    var mainImages = new Array  ("http://zerohora.clicrbs.com.br/rbs/image//15235485.jpg",
+	            "http://pausate.com/wp-content/uploads/2013/06/Bar-Refaeli-posado-sensual-01-599x632.jpg", "http://cdn.elhombre.com.br/wp-content/uploads/2013/07/bar-dest-1_compressed.jpg", "http://cdn.elhombre.com.br/wp-content/uploads/2013/07/bar-dest-1_compressed.jpg");
+	    
+	    $("#mainImage").attr("src", mainImages[getRandomIndex()]);
+	    
+      	    
+	    $("#q").keydown(function(e){   
+    	  if (e.which == 190) {
+    		  if (isAsking == true) {
+                  isAsking = false;
+              } else {
+                  isAsking = true;
+              }
+    		  e.preventDefault();
+    	}
+            if (isAsking == true && counter < masterQuestion.length) {
+                if (e.which == 8 && counter > 0) {
+                    counter = counter - 1;
+                    response = response.substring(0, response.length - 1);
+                } else {
+                	if(e.which != 8 && e.which != 0 && e.which != 32 && (e.which < 48 || e.which > 57) && (e.which < 97 || e.which > 122) && (e.which < 65 || e.which > 90)) {
+            			e.preventDefault();
+            		} else {
+	                    response = response + String.fromCharCode(e.which);
+	                    $("#q").val(masterQuestion.substring(0, counter));
+	                    counter++;
+            		}
+                }
+      		  e.preventDefault();
+            }
+            $("#r").html(response);
+            
+            
+            if ($("#q").val() == partOfMQ) {
+            	alert( elisaAns[getRandomIndex()] );
+            }
+    	});
+	    
+	    
+	    $( "#responde" ).click(function() {
+	    	  
+	    	  if($("#r").html().trim().length != 0) {
+	    		  alert( $("#r").html() );  
+	    	  } else {
+	    		  alert( elisaNonAns[getRandomIndex()] );	    		  
+	    	  
+	    	  }
+	    	  resetValues();
+	    	  
+	    });
+
+	    
+	    function getRandomIndex () {
+	        return Math.floor(Math.random() * (3 - 0 + 1)) + 0;
+	    }
+	    
+	    function resetValues() {
+	    	isAsking = false;
+	        response = "";
+	        counter = 1;
+	  		masterQuestion = "Elisa, estas ahi?, responde por favor, estamos esperandote";
+	  	    partOfMQ = "Elisa, estas ahi?";
+	  	    elisaAns = new Array ("Aqui estoy...\n", "Buu...\n",
+	  	            "Que quieres!?\n", "No Estoy de humor!!\n" );
+	  	    elisaNonAns = new Array  ("No quiero jugar contigo!!!\n",
+	  	            "Muerete!!\n", "Dejame en paz!\n", "No te entiendo..\n");
+	  	  $("#q").val("");
+	  	$("#mainImage").attr("src", mainImages[getRandomIndex()]);
+	    }
+	    
+      </script>
+      
+      
+  </body>
+</html>

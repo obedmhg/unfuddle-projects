@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Platos Fuertes"
+            android:padding="3dip" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Boneless"
+            android:padding="3dip" />
+        <TextView
+            android:text="$90.00"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Salad"
+            android:padding="3dip" />
+        <TextView
+            android:text="$65.00"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+    
+      <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Pizza Grande"
+            android:padding="3dip" />
+        <TextView
+            android:text="$125.00"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+    
+</TableLayout>

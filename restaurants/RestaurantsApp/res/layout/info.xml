@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Address"
+            android:padding="3dip" />
+        <TextView
+            android:text="The Address of the Franchise"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Phone"
+            android:padding="3dip" />
+        <TextView
+            android:text="55-555-5555"
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Store Hours"
+            android:padding="3dip" />
+    </TableRow>
+    
+        <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Lunes"
+            android:padding="3dip" />
+        <TextView
+            android:text="8:00 a.m. - 10:00 p.m."
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+    
+    
+            <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Martes"
+            android:padding="3dip" />
+        <TextView
+            android:text="8:00 a.m. - 10:00 p.m."
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+    
+    
+            <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Miercoles"
+            android:padding="3dip" />
+        <TextView
+            android:text="8:00 a.m. - 10:00 p.m."
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+    
+    
+            <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Jueves"
+            android:padding="3dip" />
+        <TextView
+            android:text="8:00 a.m. - 10:00 p.m."
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+    
+    
+            <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Viernes"
+            android:padding="3dip" />
+        <TextView
+            android:text="8:00 a.m. - 10:00 p.m."
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+    
+    
+            <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Sabado"
+            android:padding="3dip" />
+        <TextView
+            android:text="8:00 a.m. - 10:00 p.m."
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+    
+    
+            <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Domingo"
+            android:padding="3dip" />
+        <TextView
+            android:text="8:00 a.m. - 10:00 p.m."
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+    
+    
+</TableLayout>

@@ -1,0 +1,71 @@
+
+/* CONTACT --------------------------------------------------------*/
+
+.one-column{
+	width: 438px;
+	float: left;
+	margin-left: 30px;
+}
+
+/* FORMS ------------------------------------------------------------*/
+
+#sc-contact-form,
+#contactForm,
+#commentform,
+#contactForm{
+	margin-bottom: 18px;
+}
+
+#sc-contact-form input,
+#sc-contact-form textarea,
+.admin-form input,
+.admin-form textarea,
+#contactForm input,
+#contactForm textarea,
+#commentform input,
+#commentform textarea{
+	padding: 10px 15px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#sc-contact-form input,
+.admin-form input,
+#contactForm input,
+#commentform input{
+	width: 282px;
+}
+
+#sc-contact-form textarea,
+.admin-form textarea,
+#contactForm textarea,
+#commentform textarea{
+	width: 380px;
+}
+
+
+
+#sc-contact-form input,
+#sc-contact-form textarea,
+.admin-form input,
+.admin-form textarea,
+#contactForm input,
+#contactForm textarea,
+#commentform input,
+#commentform textarea{
+	color: #606060;
+	font-size: 14px;
+}
+
+#sc-contact-form label,
+.admin-form label,
+#contactForm label,
+#commentform label{
+	display: block;
+	font-size: 14px;
+	line-height: 2.5em;
+	font-weight: light;
+}

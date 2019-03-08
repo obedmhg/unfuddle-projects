@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<click-app>
+
+  <!-- Specify the Java package where Page classes can be found -->
+  <pages package="com.ocorp"/>
+  <page path="click-page.htm" classname="com.ocorp.ClickPage"/>
+  <page path="profile/create-user.htm" classname="com.ocorp.profile.CreateUser"/>
+  <page path="profile/small-login.htm" classname="com.ocorp.profile.SmallLogin"/>
+  <page path="onereasonfor/create-one-reason-for.htm" classname="com.ocorp.onereasonfor.CreateOneReasonFor"/>
+  <page path="onereasonfor/one-reason-for-list.htm" classname="com.ocorp.onereasonfor.OneReasonForList"/>
+
+</click-app>
